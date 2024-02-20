@@ -10,30 +10,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-primaire-subtil">
-            <div class="container-fluid">
-                <a class="navbar-brand" aria-current="page" href="/index.html">Accueil</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                        <a class="nav-link" href="/presentation.html">Présentation</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link " href="#">Personnages</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="/recherche_episodes.html">Volumes</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="/contact.html">Contact</a>
-                        </li>
-                    </ul>
-            </div>
-            </nav>
+       
     </header>
     <main>
         <section class="accueil-site">
@@ -47,8 +24,25 @@
                 <img  src="/images/wallpaper.jpg" alt="photo-accueil">
             </div>
         </section>
-        
-
+        <div id="after_submit"></div>
+        <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+        <div class="row">
+            <label class="required" for="name">Your name:</label><br />
+            <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+            <span id="name_validation" class="error_message"></span>
+        </div>
+        <div class="row">
+            <label class="required" for="email">Your email:</label><br />
+            <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+            <span id="email_validation" class="error_message"></span>
+        </div>
+        <div class="row">
+            <label class="required" for="message">Your message:</label><br />
+            <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+            <span id="message_validation" class="error_message"></span>
+        </div>
+            <input id="submit_button" type="submit" value="Send email" />
+        </form>
     </main>
     <footer>
 

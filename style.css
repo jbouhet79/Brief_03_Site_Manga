@@ -75,3 +75,22 @@ nav ul {
     /* Même si vous ne connaissez pas cette propriété, vous en aurez besoin pour permettre aux images de respecter les dimensions de la grid CSS */
     object-fit: cover;
 }
+
+.contact {
+    /* display: flex;
+    margin-left: 150 px; */
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: auto;
+
+}
+
+.contact-tel {
+    display: flex;
+    margin-left: 150 px;
+}
