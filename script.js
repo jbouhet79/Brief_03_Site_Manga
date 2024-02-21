@@ -1,4 +1,5 @@
 window.addEventListener('load', ()=>{
+
     document.querySelector('header').innerHTML = `
     <nav class="navbar navbar-expand-lg bg-primaire-subtil">
     <div class="container-fluid">
@@ -27,10 +28,35 @@ window.addEventListener('load', ()=>{
     `
 })
 
+const volumArray = ["images/volume 1.png", "images/volume 2.png", "images/volume 3.png", "images/volume 4.png", "images/volume 5.png", "images/volume 6.png", "images/volume 7.png", "images/volume 8.png", "images/volume 9.png", "images/volume 10.png", "images/volume 11.png", "images/volume 12.png"];
+
 let inputVolum = document.querySelector("#InputVolum");
+
+let index = 0;
+
 
 inputVolum.addEventListener("input", e => {
     let input = e.target.value;
     console.log(input);
+    index = Number(input) - 1;
+    // const dest = document.querySelector('section.img-volume')
+    const dest = document.querySelector('div#chapter')
+
+    const value = volumArray[index]
+    dest.innerHTML = `<a href="${value}"><img src="${value}"></img></a>`
 })
+
+inputVolum.addEventListener('click', _ => {
+    inputVolum.value = "";
+})
+
+// function makeImage() {
+//     const img = document.createElement('img');
+//     img.src = volumArray[index];
+//     console.log(index);
+//     document.getElementById('content').appendChild(img);
+// }
+
+
+
 

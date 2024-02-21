@@ -27,6 +27,8 @@ nav {
     background-color: #a2cafd;
 }
 
+/* ======================== page Accueil =====================*/
+
 .container-fluid {
     margin-left: 50px;
 }
@@ -62,6 +64,54 @@ nav ul {
     margin-right: 100px;
 }
 
+/* =========================== page Volumes =======================*/
+
+/* .volumes-section {
+    padding-bottom: 0px;
+    
+} */
+
+.volumes-section {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.champ-saisie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.champ-saisie input {
+    width: 100px;
+}
+
+#chapter img {
+    max-height: 700px;
+    width: 50vw;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.img-volume {
+    /* display: grid; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    padding-left: 30%;
+    max-height: 20%;
+    /* width: 20px; */
+    /* position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
 .grid-volumes {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -75,6 +125,8 @@ nav ul {
     /* Même si vous ne connaissez pas cette propriété, vous en aurez besoin pour permettre aux images de respecter les dimensions de la grid CSS */
     object-fit: cover;
 }
+
+/* ========================= page Contact ===============================*/
 
 .contact {
     /* display: flex;
