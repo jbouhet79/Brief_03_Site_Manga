@@ -11,7 +11,6 @@ body {
 h1 {
     font-size: 3.5em;
     color: rgb(32,118,179);
-    /* font-family: Montserrat, sans-serif; */
 }
 
 section {
@@ -39,7 +38,7 @@ footer p {
     margin: 0;
 }
 
-/* ======================== page Accueil =====================*/
+/* ======================== nav =====================*/
 
 .container-fluid {
     margin-left: 50px;
@@ -49,10 +48,13 @@ nav ul {
     margin-right: 50px;
 }
  
+/* ======================== page Accueil =====================*/
+
 .accueil-titre {
     margin-top: 10px;
     margin-left: 100px;
 }
+
 .accueil-site {
     display: flex;
     flex-direction: row;
@@ -182,33 +184,47 @@ nav ul {
 
 /* Media Queries */
   
-  /* Pour les écrans jusqu'à 900px de large */
-  @media (max-width: 900px) {
-    section .accueil-site {
-        flex-basis: calc(50% - 20px); /* Ajustez le 20px si votre gap est différent */
-        flex-direction: column;
-        width: auto;
-    }
-  }
-  
-  /* Pour les écrans jusqu'à 600px de large */
-  @media (max-width: 600px) {
-    section .accueil-site {  /* modif pour affichage colonne */
-        flex-basis: 100%;
-        flex-direction: column;
+/* Pour les écrans jusqu'à 900px de large */
+@media (max-width: 900px) {
+section .accueil-site {
+    flex-basis: calc(50% - 20px); /* Ajustez le 20px si votre gap est différent */
+    flex-direction: column;
+    width: auto;
+}
+}
 
-    }
-    section #wallpaper {
-        height: auto;
-        width: 100%;
+/* Pour les écrans jusqu'à 600px de large */
+@media (max-width: 600px) {
 
-    }
+h1 {
+    font-size: 2.5em;
+    color: rgb(32,118,179);
+}
 
-    section .accueil-site  {
-        flex-basis: 100%;
-    }
+.accueil-titre {
+    margin-left: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 0;
 
-    /* .footer img {
-        width: auto ;
-    } */
-  }
+
+}
+    
+.accueil-site { 
+    flex-basis: 100%;
+    flex-direction: column;
+    margin-top: 0;
+    background-color: blue;
+}
+
+#wallpaper {
+    height: auto;
+    width: 100%;
+}
+
+footer, nav {
+    width: 100%;
+    background-color: red;
+    font-size: 0.9em;
+}
+}
