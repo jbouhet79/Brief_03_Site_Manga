@@ -64,6 +64,7 @@ nav ul {
     justify-content: space-between;
     margin: auto;
     padding-top: 0;
+    margin-bottom: 500px;
 }
 
 .accueil-site h1 {
@@ -90,11 +91,12 @@ nav ul {
 
 .presentation {
     text-align:justify;
-    width: 80%;
-    height: 80vh;
-    margin-top: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
+    /* width: 80%; */
+    /* padding: auto; */
+    margin: 20px;
+    /* margin-top: 50px; */
+    /* margin-left: 100px;
+    margin-right: 100px; */
 
 }
 
@@ -130,8 +132,9 @@ nav ul {
     max-width: 50vw;
     display: flex;
     flex-direction: row-reverse;
-    margin-right: 100px;
-    margin-left: 100px;
+    padding-left: 100px;
+    /* margin-right: 100px; */
+    /* margin-left: 100px; */
 }
 
 .img-volume {
@@ -144,7 +147,7 @@ nav ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 400px 400px;
-    gap: 15px;
+    gap: 10px;
 }
 
 .grid-volumes img {
@@ -160,7 +163,6 @@ nav ul {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 70vh;
     align-items: flex-start;
     justify-content: center;
     padding-left: 50px;
@@ -198,6 +200,8 @@ section .accueil-site {
 
 h1 {
     font-size: 2.5em;
+    margin-left: 30px;
+    /* text-align: center; */
     color: rgb(32,118,179);
 }
 
@@ -213,15 +217,31 @@ h1 {
 .accueil-site { 
     flex-basis: 100%;
     flex-direction: column;
-    margin-top: 0;
+    /* flex-wrap: wrap; */
+    /* margin-top: 20px; */
+    /* margin-right: 0; */
+    padding-right: 0;
+    padding-left: 0;
     background-color: blue;
+    margin-bottom: 100px;
+    /* padding-bottom: 400px; */
+}
+
+.accueil-texte {
+    /* margin-left: 30px; */
+    text-align: center;
+    padding: 0;
 }
 
 #wallpaper {
     height: auto;
     width: 100%;
+    margin-bottom: 50px;
 }
 
+#chapter img {
+    padding-left: 50px;
+}
 footer, nav {
     width: 100%;
     background-color: red;
