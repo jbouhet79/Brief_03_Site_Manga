@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr-FR">
 <head>
     <meta charset="UTF-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -37,33 +37,17 @@
             </div>
             </nav>
     </header>
-        <!-- <div class="carousel">
-            <div class="carousel-container">
-                <div class="carousel-item">
-                  <img src="/images/mao mao.png" alt="Image 1">
-                </div>
-                <div class="carousel-item">
-                  <img src="/images/jinshi.png" alt="Image 2">
-                </div>
-                <div class="carousel-item">
-                  <img src="/images/Gyokuyou.png" alt="Image 3">
-                </div>
-                
-            </div>
-            <div class="carouselButton">
-                <button id="prevBtn"><i class=" fa fa-duotone fa-chevron-left"></i></button>
-                <button id="nextBtn"><i class="fa fa-duotone fa-chevron-right"></i></button>
-            </div> -->
+    
             <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="/images/mao mao.png" class="d-block w-100" alt="">
+                  <div class="carousel-item active c-item">
+                    <img src="/images/mao mao.png" class="d-block w-100 c-img" alt="Slide 1">
                   </div>
-                  <div class="carousel-item">
-                    <img src="/images/jinshi.png" class="d-block w-100" alt="">
+                  <div class="carousel-item c-item">
+                    <img src="/images/jinshi.png" class="d-block w-100 c-img" alt="Slide 2">
                   </div>
-                  <div class="carousel-item">
-                    <img src="/images/Gyokuyou.png" class="d-block w-100" alt="">
+                  <div class="carousel-item c-item">
+                    <img src="/images/Gyokuyou.png" class="d-block w-100 c-img" alt="Slide 3">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
@@ -75,6 +59,109 @@
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
+            
+
+              <div class="container">
+
+                <h3 class="title"> Personnages</h3>
+             
+                <div class="characters-container">
+             
+                   <div class="character" data-name="c-1">
+                      <img src="/images/mao mao.png" alt="">
+                      <h3>Mao Mao</h3>
+                      <div class="description">Personnage principale - Gouteuse à la Cour impériale</div>
+                   </div>
+             
+                   <div class="character" data-name="c-2">
+                      <img src="images/jinshi.png" alt="">
+                      <h3>Jinshi</h3>
+                      <div class="description">Intendant de la Cour</div>
+                   </div>
+             
+                   <div class="character" data-name="c-3">
+                      <img src="images/Gyokuyou.png" alt="">
+                      <h3>Gyokuyou</h3>
+                      <div class="description">Favorite</div>
+                   </div>
+             
+                   <div class="character" data-name="c-4">
+                      <img src="images/lihuan.png" alt="">
+                      <h3>Lihuan</h3>
+                      <div class="description">Concubine</div>
+                   </div>
+             
+                   <div class="character" data-name="c-5">
+                      <img src="images/lishu.png" alt="">
+                      <h3>Lishu</h3>
+                      <div class="description">Concubine</div>
+                   </div>
+             
+                   <div class="character" data-name="c-6">
+                      <img src="images/gaoshun.png" alt="">
+                      <h3>Gaoshun</h3>
+                      <div class="description">Valet de Jinshi</div>
+                   </div>
+             
+                </div>
+
+                <div class="characters-preview">
+
+                  <div class="preview" data-target="c-1">
+                     <i class="fas fa-times"></i>
+                     <img src="images/1.png" alt="">
+                     <h3>Mao Mao</h3>
+                     <p>Fille d'un apothicaire vivant à la périphérie de la ville et âgée de 17 ans à peine, Mao Mao travaille au service de courtisanes dans le quartier des plaisirs. Sa vie bascule quand elle est kidnappée par des bandits qui la vendent au palais impérial. Elle est entraînée dans les intrigues du palais et grâce à ses connaissances insoupçonnables en matière de poisons et une curiosité insatiable pour tout ce qui y touche, elle est repérée par l'intendant de la cour, Jinshi. En sauvant la fille de la concubine de l'empereur, Gyokuyō, elle devient sa dame de compagnie et sa goûteuse officielle.</p>
+                  </div>
+                  
+                  <div class="preview" data-target="c-2">
+                    <i class="fas fa-times"></i>
+                    <img src="images/1.png" alt="">
+                    <h3>Jinshi</h3>
+                    <p>Eunuque à la beauté surnaturelle, il officie à la cour intérieure où résident les concubines et leur personnel respectif en tant qu'intendant. Alors que son visage attire les hommes et les femmes du palais, il se trouve plutôt attiré par Mao Mao et adore la taquiner car c'est l'unique personne qui reste insensible à son charme.</p>
+                    <div class="description">Intendant de la Cour</div>
+                 </div>
+
+             
+                 <div class="preview" data-target="c-3">
+                  <i class="fas fa-times"></i>
+                  <img src="images/1.png" alt="">
+                  <h3>Mao Mao</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+                  <div class="description">Concubine</div>
+               </div>
+
+           
+               <div class="preview" data-target="c-4">
+                <i class="fas fa-times"></i>
+                <img src="images/1.png" alt="">
+                <h3>Mao Mao</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+                <div class="description">Concubine</div>
+             </div>
+
+         
+             <div class="preview" data-target="c-5">
+              <i class="fas fa-times"></i>
+              <img src="images/1.png" alt="">
+              <h3>Mao Mao</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+              <div class="description">Concubine</div>
+           </div>
+
+       
+           <div class="preview" data-target="c-6">
+            <i class="fas fa-times"></i>
+            <img src="images/1.png" alt="">
+            <h3>Mao Mao</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+            <div class="description">Concubine</div>
+         </div>
+
+     
+
+              </div>
+             
     </main>
     <footer>
 

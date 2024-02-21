@@ -1,42 +1,10 @@
-// const carouselItems = document.querySelectorAll('.carousel-item');
-// let currentIndex = 0;
+// CAROUSSEL
 
-// function showSlide(index) {
-//   // Hide all carousel items
-//   carouselItems.forEach(item => {
-//     item.style.display = 'none';
-//   });
-
-//   // Show the slide at the specified index
-//   carouselItems[index].style.display = 'block';
-// }
-
-// function nextSlide() {
-//   currentIndex = (currentIndex + 1) % carouselItems.length;
-//   showSlide(currentIndex);
-// }
-
-// function previousSlide() {
-//   currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
-//   showSlide(currentIndex);
-// }
-
-// // Show the first slide initially
-// showSlide(currentIndex);
-
-// // Set up event listeners for next and previous buttons
-// document.getElementById('nextBtn').addEventListener('click', nextSlide);
-// document.getElementById('prevBtn').addEventListener('click', previousSlide);
-
-// window.addEventListener('load', ()=>{
-//     document.querySelector('header').innerHTML+` CODE HTML`
-// })
-
-let carouselItems = document.querySelectorAll('carousel-item');
-let lastChilItem = carouselItems[carouselItems.length - 1];
+let carouselItems = document.querySelectorAll('.carousel-item');
+let lastChildItem = carouselItems[carouselItems.length - 1];
 let firstChildItem = carouselItems[0];
-let prevButton = document.querySelector('carousel-control-prev');
-let nextButton = document.querySelector('carousel-control-next');
+let prevButton = document.querySelector('.carousel-control-prev');
+let nextButton = document.querySelector('.carousel-control-next');
 
 const prevClick = () => {
 
@@ -48,7 +16,7 @@ const prevClick = () => {
     }else {
         
         active.classList.remove('active');  
-        lastChilItem.classList.add('active');
+        lastChildItem.classList.add('active');
     }
 
 }
@@ -69,7 +37,42 @@ function nextClick() {
     }
 
 }
+    prevButton.addEventListener("click",prevClick)
     nextButton.addEventListener("click",nextClick)
     
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// CARDS
+
+    let previewContainer = document.querySelector('.characters-preview');
+    let previewBox = previewContainer.querySelectorAll('.preview');
+    
+    document.querySelectorAll('.characters-container .character').forEach(character =>{
+      character.onclick = () =>{
+        previewContainer.style.display = 'flex';
+        let name = character.getAttribute('data-name');
+        previewBox.forEach(preview =>{
+          let target = preview.getAttribute('data-target');
+          if(name == target){
+            preview.classList.add('active');
+          }
+        });
+      };
+    });
+    
+    previewBox.forEach(close =>{
+      close.querySelector('.fa-times').onclick = () =>{
+        close.classList.remove('active');
+        previewContainer.style.display = 'none';
+      };
+    });
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// MENU BURGER
+
+let buttonBurger = document.querySelector('.navbar-toggler');
+
 
 
