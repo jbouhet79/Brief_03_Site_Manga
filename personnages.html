@@ -12,43 +12,34 @@
 <body>
     <main>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="/index.html">Accueil</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                    <a class="nav-link" href="/presentation.html">Présentation</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link active" href="/personnages.html">Personnages</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="/recherche_episodes.html">Volumes</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="/contact.html">Contact</a>
-                    </li>
-                </ul>
+              <div class="burger-menu">
+                <div class="burger-icon" onclick="toggleMenu()">
+                   <i class="fa-solid fa-bars"></i>
                 </div>
-            </div>
+                  <nav class="navbar" id="menuContent">
+                    <a href="/index.html">Accueil</a>
+                    <a href="/personnages.html">Personnages</a>
+                    <a href="/recherche_episodes.html">Volumes</a>
+                    <a href="/contact.html">Contact</a>
+                  </nav>
+                </div>
             </nav>
     </header>
+
+
 
             <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
                 <div class="carousel-inner">
                   <div class="carousel-item active c-item">
-                    <img src="/images/mao mao.png" class="d-block w-100 c-img" alt="Slide 1">
-                  </div>
+                    <img src="/images/mao mao 2.png" class="d-block w-100 c-img" alt="Slide 1">
+                   </div>
                   <div class="carousel-item c-item">
                     <img src="/images/jinshi.png" class="d-block w-100 c-img" alt="Slide 2">
                   </div>
                   <div class="carousel-item c-item">
                     <img src="/images/Gyokuyou.png" class="d-block w-100 c-img" alt="Slide 3">
                   </div>
+                  
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -74,7 +65,7 @@
                    </div>
              
                    <div class="character" data-name="c-2">
-                      <img src="images/jinshi.png" alt="">
+                      <img src="images/jinshi 2.png" alt="">
                       <h3>Jinshi</h3>
                       <div class="role">Intendant de la Cour</div>
                    </div>
@@ -86,8 +77,8 @@
                    </div>
              
                    <div class="character" data-name="c-4">
-                      <img src="images/lihuan.png" alt="">
-                      <h3>Lihuan</h3>
+                      <img src="images/lifa.png" alt="">
+                      <h3>Lifa</h3>
                       <div class="role">Concubine</div>
                    </div>
              
@@ -105,10 +96,13 @@
              
                 </div>
 
-                <div class="character-preview">
+                <div id="myModal" class="modal">
 
-              </div>
-             
+                  <div class="character-preview modal-content">
+
+                  </div>
+
+                </div>
     </main>
     <footer>
 
