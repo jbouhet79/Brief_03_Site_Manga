@@ -9,10 +9,10 @@ window.addEventListener('load', ()=>{
               <span class="line line3"></span>
              </div>
             <ul class="menu-items">
-              <li><a href="/presentation.html">Présentation</a></li>
-              <li><a href="/personnages.html">Personnages</a></li>
-              <li><a href="/recherche_episodes.html">Volumes</a></li>
-              <li><a href="/contact.html">Contact</a></li>
+              <li><a href="presentation.html">Présentation</a></li>
+              <li><a href="personnages.html">Personnages</a></li>
+              <li><a href="recherche_episodes.html">Volumes</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="logo">
                 <a class="navb-brand" aria-current="page" href="/index.html">Accueil</a>
