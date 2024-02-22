@@ -13,7 +13,7 @@ body {
 main {
     padding-top: 50px;
     padding-bottom: 60px;
-
+    min-height: calc( 100vh - 60px );
 }
 
 h1 {
@@ -50,7 +50,6 @@ section {
   opacity: 0.85;
   height: 50px;
   z-index: 12;
- */
 }
 
 .navb-container {
@@ -110,9 +109,6 @@ footer {
     align-items: center;
     background-color: #a2cafd;
     height: 60px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
 }
 
 footer p {
@@ -337,9 +333,9 @@ footer {
     width: 100%;
     background-color: #a2cafd;
     font-size: 0.9em;
-    position: absolute;
+    /* position: absolute;
     bottom: 0;
-    width: 100%;
+    width: 100%; */
 }
 }
 
