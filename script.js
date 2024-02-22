@@ -15,7 +15,7 @@ window.addEventListener('load', ()=>{
               <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="logo">
-                <a class="navb-brand" aria-current="page" href="/index.html">Accueil</a>
+                <a class="navb-brand" aria-current="page" href="index.html">Accueil</a>
             </div>
       </div>
     </nav>
