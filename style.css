@@ -64,6 +64,7 @@ section {
 .menu-items {
   order: 2;
   display: flex;
+  padding-bottom: 20px;
 }
 
 .menu-items li {
@@ -93,6 +94,7 @@ section {
   order: 1;
   font-size: 2.3rem;
   margin-bottom: 0.5rem;
+  padding-bottom: 30px;
   /* font-size: 3.5em; */
 }
 
@@ -245,7 +247,11 @@ footer p {
     padding-left: 50px;
     padding-right: 50px;
     margin: auto;
+    /* background-image: url(images/wallpaper.jpg);
+    filter: blur(1.2rem);
+    background-position: center; */
 }
+
 
 .input, #submit_button {
     border-radius: 10px;
@@ -336,7 +342,7 @@ footer {
     /* position: absolute;
     bottom: 0;
     width: 100%; */
-}
+    }
 }
 
 /* ......../ media query / MENU BURGER .......... */
@@ -449,7 +455,7 @@ footer {
     }
 }
   
-  @media (max-width: 500px) {
+@media (max-width: 500px) {
     html {
       font-size: 65%;
     }
@@ -499,4 +505,208 @@ footer {
       font-size: 1.8rem;
       font-weight: 500;
     }
-  }
+}
+
+/* AFFICHAGE DES PERSONAGES EN PAGE PRINCIPALE */
+
+.c-item {
+    background-image: url("images/wallpaper 4.jpg");
+    background-size:cover;
+    height: 50vh;
+   
+}
+
+.c-img {
+    height: 100%;
+    object-fit:contain;
+    filter: brightness(0.6);
+}
+
+.container{
+    max-width: 1200px;
+    margin:0 auto;
+    padding:3rem 2rem;
+}
+ 
+.container .title{
+    font-size: 3.5rem;
+    color:#444;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+ 
+ 
+.container .characters-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:2rem;
+}
+ 
+.container .characters-container .character{
+    text-align: center;
+    padding:3rem 2rem;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    outline: .1rem solid #ccc;
+    outline-offset: -1.5rem;
+    cursor: pointer;
+}
+ 
+.container .characters-container .character:hover{
+    outline: .2rem solid #222;
+    outline-offset: 0;
+}
+ 
+.container .characters-container .character img{
+    height: 25rem;
+}
+ 
+.container .characters-container .character:hover img{
+   transform: scale(.9);
+}
+ 
+.container .characters-container .character h3{
+    padding:.5rem 0;
+    font-size: 2rem;
+    color:#444;
+}
+ 
+.container .characters-container .character:hover h3{
+    color:#27ae60;
+}
+ 
+.container .characters-container .character .description{
+    font-size: 2rem;
+    color:#444;
+}
+ 
+.characters-preview{
+    position: fixed;
+    top:0; left:0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+ 
+ 
+.characters-preview .preview{
+    display: none;
+    padding:2rem;
+    text-align: center;
+    background: #fff;
+    position: relative;
+    margin:2rem;
+    width: 40rem;
+}
+ 
+.characters-preview .preview.active{
+    display: inline-block;
+}
+ 
+.characters-preview .preview img{
+    height: 30rem;
+}
+ 
+.characters-preview .preview.fa-times{
+    position: absolute;
+    top:1rem; right:1.5rem;
+    cursor: pointer;
+    color:#444;
+    font-size: 4rem;
+}
+ 
+.characters-preview .preview .fa-times:hover{
+    transform: rotate(90deg);
+}
+ 
+.characters-preview .preview h3{
+    color:#444;
+    padding:.5rem 0;
+    font-size: 2.5rem;
+}
+ 
+ 
+ 
+.characters-preview .preview p{
+    line-height: 1.5;
+    padding:1rem 0;
+    font-size: 1.6rem;
+    color:#777;
+}
+ 
+.characters-preview .preview .description{
+    padding:1rem 0;
+    font-size: 2.5rem;
+    color:#27ae60;
+}
+
+.characters-preview .preview .fa-times{
+    position: absolute;
+    top:1rem; right:1.5rem;
+    cursor: pointer;
+    color:#444;
+    font-size: 4rem;
+}
+
+.characterss-preview .preview .fa-times:hover{
+    transform: rotate(90deg);
+}
+
+.character-preview{
+    position: absolute;
+}
+
+/* STYLE DE LA FENETRE MODAL*/
+
+.modal {
+   margin:0; /* Centre le modal verticalement et horizontalement */
+   padding: 20px;
+   display: none; /* Hidden by default */
+   /* position: absolute; Stay in place */
+   z-index: 1; /* Sit on top */
+   flex-direction: column;
+   justify-content: center;
+   /* padding-top: 100px; 
+   left: 0;
+   top: 0; */
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgb(0,0,0); /* Fallback color */
+   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+ 
+ 
+/* Modal Content */
+.modal-content {
+   /* position: absolute;
+   justify-content: center; */
+   display: flex;
+   /* flex-direction: column; */
+   justify-content: center;
+   background-color: #fefefe;
+   margin-left: 25%; /* Centre le modal verticalement et horizontalement */
+   
+   padding: 5% ;
+   border: 1px solid #888;
+   width: 50%;
+}
+
+.modal-content img {
+
+   max-width: 100%;
+   height: auto;
+   padding: 11%;
+   margin: 11%;
+   /* margin-right: 20%;
+   margin-bottom: 15%; */
+}
+
+.modal-content h3 {
+   font-size: 50pt;
+}
+
+.modal-content p {
+   font-size: 15pt;
+}
