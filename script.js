@@ -36,7 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 function volumLoad() {
-    const volumArray = ["images/volume 1.png", "images/volume 2.png", "images/volume 3.png", "images/volume 4.png", "images/volume 5.png", "images/volume 6.png", "images/volume 7.png", "images/volume 8.png", "images/volume 9.png", "images/volume 10.png", "images/volume 11.png", "images/volume 12.png"];
+
+    const volumArray = ["images/volume1.png", "images/volume2.png", "images/volume3.png", "images/volume4.png", "images/volume5.png", "images/volume6.png", "images/volume7.png", "images/volume8.png", "images/volume9.png", "images/volume10.png", "images/volume11.png", "images/volume12.png"];
 
     let inputVolum = document.querySelector("#InputVolum");
 
@@ -107,14 +108,14 @@ function characterLoad() {
     let dataTargets = [
         {   
             target : 'c-1',
-            image : 'images/mao mao.png',
+            image : 'images/mao_mao.png',
             name: 'Mao Mao', 
             description: `Fille d'un apothicaire vivant à la périphérie de la ville et âgée de 17 ans à peine, Mao Mao travaille au service de courtisanes dans le quartier des plaisirs. Sa vie bascule quand elle est kidnappée par des bandits qui la vendent au palais impérial. Elle est entraînée dans les intrigues du palais et grâce à ses connaissances insoupçonnables en matière de poisons et une curiosité insatiable pour tout ce qui y touche, elle est repérée par l'intendant de la cour, Jinshi. En sauvant la fille de la concubine de l'empereur, Gyokuyō, elle devient sa dame de compagnie et sa goûteuse officielle. `
         },
 
         {   
             target: 'c-2',
-            image : 'images/jinshi 2.png',
+            image : 'images/jinshi2.png',
             name: 'Jinshi',
             description: `Eunuque à la beauté surnaturelle, il officie à la cour intérieure où résident les concubines et leur personnel respectif en tant qu'intendant. Alors que son visage attire les hommes et les femmes du palais, il se trouve plutôt attiré par Mao Mao et adore la taquiner car c'est l'unique personne qui reste insensible à son charme.` 
         },

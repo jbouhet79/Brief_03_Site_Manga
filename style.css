@@ -289,7 +289,7 @@ h1 {
 }
 
 .wallpaper {
-  background-image: url("images/wallpaper 2.jpg");
+  background-image: url("images/wallpaper2.jpg");
   width: 100%;
 }
 
@@ -467,7 +467,7 @@ footer {
 /* ==============AFFICHAGE DES PERSONNAGES EN PAGE PRINCIPALE================= */
 
 .c-item {
-    background-image: url("images/wallpaper 4.jpg");
+    background-image: url("images/wallpaper4.jpg");
     background-size: cover;
     height: 50vh;
    
