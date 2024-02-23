@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 function volumLoad() {
+
     const volumArray = ["images/volume1.png", "images/volume2.png", "images/volume3.png", "images/volume4.png", "images/volume5.png", "images/volume6.png", "images/volume7.png", "images/volume8.png", "images/volume9.png", "images/volume10.png", "images/volume11.png", "images/volume12.png"];
 
     let inputVolum = document.querySelector("#InputVolum");
