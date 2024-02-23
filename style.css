@@ -469,14 +469,14 @@ footer {
 
 .c-item {
     background-image: url("images/wallpaper 4.jpg");
-    background-size:cover;
+    background-size: cover;
     height: 50vh;
    
 }
 
 .c-img {
     height: 100%;
-    object-fit:contain;
+    object-fit: contain;
     filter: brightness(0.6);
 }
 
@@ -498,12 +498,12 @@ footer {
 .container .characters-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap:2rem;
+    gap: 2rem;
 }
  
 .container .characters-container .character {
     text-align: center;
-    padding:3rem 2rem;
+    padding: 3rem 2rem;
     background: #fff;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     outline: .1rem solid #ccc;
@@ -553,11 +553,11 @@ footer {
  
 .characters-preview .preview {
     display: none;
-    padding:2rem;
+    padding: 2rem;
     text-align: center;
     background: #fff;
     position: relative;
-    margin:2rem;
+    margin: 2rem;
     width: 40rem;
 }
  
@@ -583,7 +583,7 @@ footer {
  
 .characters-preview .preview h3 {
     color:#444;
-    padding:.5rem 0;
+    padding: .5rem 0;
     font-size: 2.5rem;
 }
  
@@ -591,13 +591,13 @@ footer {
  
 .characters-preview .preview p {
     line-height: 1.5;
-    padding:1rem 0;
+    padding: 1rem 0;
     font-size: 1.6rem;
     color:#777;
 }
  
 .characters-preview .preview .description {
-    padding:1rem 0;
+    padding: 1rem 0;
     font-size: 2.5rem;
     color:#27ae60;
 }
@@ -621,16 +621,12 @@ footer {
 /* ===================STYLE DE LA FENETRE MODAL=========================*/
 
 .modal {
-   margin:0; /* Centre le modal verticalement et horizontalement */
+   margin: 0; /* Centre le modal verticalement et horizontalement */
    padding: 20px;
    display: none; /* Hidden by default */
-   /* position: absolute; Stay in place */
    z-index: 1; /* Sit on top */
    flex-direction: column;
    justify-content: center;
-   /* padding-top: 100px; 
-   left: 0;
-   top: 0; */
    width: 100%; /* Full width */
    height: 100%; /* Full height */
    overflow: auto; /* Enable scroll if needed */
