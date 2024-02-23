@@ -6,7 +6,6 @@
 
 body {
     background-color: #cfc2de;
-    /* menur burger */
     font-family: "Poppins", sans-serif;
 }
 
@@ -25,16 +24,7 @@ section {
     padding : 40px;
 }
 
-/* nav {
-    padding : 80px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #a2cafd;
-} */
-
-/* menur burger */
+/* ================= Menu Burger ================*/
 
 .navb input[type="checkbox"],
 .navb .hamburger-lines {
@@ -78,8 +68,6 @@ section {
 .menu-items a {
   text-decoration: none;
   color: rgba(40,63,110,255);
-  /* color: #444; */
-  /* color: #ffffff; */
   font-weight: 500;
   transition: color 0.3s ease-in-out;
 
@@ -95,7 +83,6 @@ section {
   font-size: 2.3rem;
   margin-bottom: 0.5rem;
   padding-bottom: 30px;
-  /* font-size: 3.5em; */
 }
 
 .navb-brand {
@@ -103,7 +90,9 @@ section {
   color: rgb(32,118,179);
 }
 
-/* fin menu bureg */
+/* =============fin menu burger======================== */
+
+/* ============ footer ================================*/
 
 footer {
     display: flex;
@@ -115,18 +104,9 @@ footer {
 
 footer p {
     margin: 0;
+    color: rgba(40,63,110,255);
 }
 
-/* ======================== nav =====================*/
-
-/* .container-fluid {
-    margin-left: 50px;
-} */
-
-/* nav ul {
-    margin-right: 50px;
-} */
- 
 /* ======================== page Accueil =====================*/
 
 .accueil-titre {
@@ -135,15 +115,13 @@ footer p {
 }
 
 .accueil-site {
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    height: 70vh;
-    align-items: center;
-    justify-content: space-between;
-    margin: auto;
-    padding-top: 0;
-    /* margin-bottom: 500px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: auto;
+  width: 90%;
+  align-items: flex-start;
+  margin: auto;
 }
 
 .accueil-site h1 {
@@ -152,31 +130,31 @@ footer p {
 
 .accueil-texte {
     display: flex;
-    padding-right: 80px;
+    padding-right: 60px;
     text-align: left;
     flex-wrap: wrap;
     margin: auto;
+    font-size: large;
+    width: 70%;
 }
 
-.wallpaper img {
-    max-width: 50vw;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    margin: auto;
+.wallpaper {
+
+    margin-top: 200px;
+
+    background-image: url("images/wallpaper.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 960px;
 }
 
 /* =========================== page présentation ==================*/
 
 .presentation {
     text-align:justify;
-    /* width: 80%; */
-    /* padding: auto; */
     margin: 20px;
-    /* margin-top: 50px; */
-    /* margin-left: 100px;
-    margin-right: 100px; */
-
+    font-size: large;
 }
 
 .presentation-h2 {
@@ -190,6 +168,7 @@ footer p {
 .volumes-section {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     height: auto;
     width: 100%;
     align-items: flex-start;
@@ -212,8 +191,6 @@ footer p {
     display: flex;
     flex-direction: row-reverse;
     padding-left: 100px;
-    /* margin-right: 100px; */
-    /* margin-left: 100px; */
 }
 
 .img-volume {
@@ -224,15 +201,13 @@ footer p {
 
 .grid-volumes {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 400px 400px;
-    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
 }
 
 .grid-volumes img {
     width: 100%;
     height: 100%;
-    /* Même si vous ne connaissez pas cette propriété, vous en aurez besoin pour permettre aux images de respecter les dimensions de la grid CSS */
     object-fit: cover;
 }
 
@@ -240,16 +215,13 @@ footer p {
 
 .contact {
     display: flex;
-    flex-direction: row; */
-    width: 100%; */
+    flex-direction: row;
+    width: 100%;
     align-items: flex-start;
     justify-content: center;
     padding-left: 50px;
     padding-right: 50px;
     margin: auto;
-    /* background-image: url(images/wallpaper.jpg);
-    filter: blur(1.2rem);
-    background-position: center; */
 }
 
 
@@ -261,7 +233,6 @@ footer p {
 #submit_button {
     padding: 5px;
 }
-
 
 .contact-title {
     display: flex;
@@ -282,7 +253,7 @@ footer p {
 /* Pour les écrans jusqu'à 900px de large */
 @media (max-width: 900px) {
 section .accueil-site {
-    flex-basis: calc(50% - 20px); /* Ajustez le 20px si votre gap est différent */
+    flex-basis: calc(50% - 20px); 
     flex-direction: column;
     width: auto;
 }
@@ -302,8 +273,6 @@ h1 {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-left: 0;
-
-
 }
     
 .accueil-site { 
@@ -319,33 +288,23 @@ h1 {
     padding: 0;
 }
 
-#wallpaper {
-    height: auto;
-    width: 100%;
-    margin-bottom: 50px;
+.wallpaper {
+  background-image: url("images/wallpaper 2.jpg");
+  width: 100%;
 }
 
 #chapter img {
     padding-left: 50px;
 }
 
-/* footer, nav {
-    width: 100%;
-    background-color: rgb(122, 115, 159);
-    font-size: 0.9em;
-} */
-
 footer {
     width: 100%;
     background-color: #a2cafd;
     font-size: 0.9em;
-    /* position: absolute;
-    bottom: 0;
-    width: 100%; */
     }
 }
 
-/* ......../ media query / MENU BURGER .......... */
+/* ==============/ media query / MENU BURGER ================== */
 
 @media (max-width: 768px) {
     .navb {
@@ -392,7 +351,6 @@ footer {
       height: 4px;
       width: 100%;
       border-radius: 10px;
-      /* background: #333; */
       background: #ffffff;
     }
   
@@ -507,7 +465,7 @@ footer {
     }
 }
 
-/* AFFICHAGE DES PERSONAGES EN PAGE PRINCIPALE */
+/* ==============AFFICHAGE DES PERSONNAGES EN PAGE PRINCIPALE================= */
 
 .c-item {
     background-image: url("images/wallpaper 4.jpg");
@@ -522,27 +480,28 @@ footer {
     filter: brightness(0.6);
 }
 
-.container{
+.container {
     max-width: 1200px;
     margin:0 auto;
     padding:3rem 2rem;
 }
  
-.container .title{
+.container .title {
     font-size: 3.5rem;
     color:#444;
     margin-bottom: 3rem;
     text-transform: uppercase;
     text-align: center;
+}
  
  
-.container .characters-container{
+.container .characters-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap:2rem;
 }
  
-.container .characters-container .character{
+.container .characters-container .character {
     text-align: center;
     padding:3rem 2rem;
     background: #fff;
@@ -552,35 +511,35 @@ footer {
     cursor: pointer;
 }
  
-.container .characters-container .character:hover{
+.container .characters-container .character:hover {
     outline: .2rem solid #222;
     outline-offset: 0;
 }
  
-.container .characters-container .character img{
+.container .characters-container .character img {
     height: 25rem;
 }
  
-.container .characters-container .character:hover img{
+.container .characters-container .character:hover img {
    transform: scale(.9);
 }
  
-.container .characters-container .character h3{
+.container .characters-container .character h3 {
     padding:.5rem 0;
     font-size: 2rem;
     color:#444;
 }
  
-.container .characters-container .character:hover h3{
+.container .characters-container .character:hover h3 {
     color:#27ae60;
 }
  
-.container .characters-container .character .description{
+.container .characters-container .character .description {
     font-size: 2rem;
     color:#444;
 }
  
-.characters-preview{
+.characters-preview {
     position: fixed;
     top:0; left:0;
     min-height: 100vh;
@@ -589,9 +548,10 @@ footer {
     display: none;
     align-items: center;
     justify-content: center;
+}
  
  
-.characters-preview .preview{
+.characters-preview .preview {
     display: none;
     padding:2rem;
     text-align: center;
@@ -601,15 +561,15 @@ footer {
     width: 40rem;
 }
  
-.characters-preview .preview.active{
+.characters-preview .preview.active {
     display: inline-block;
 }
  
-.characters-preview .preview img{
+.characters-preview .preview img {
     height: 30rem;
 }
  
-.characters-preview .preview.fa-times{
+.characters-preview .preview.fa-times {
     position: absolute;
     top:1rem; right:1.5rem;
     cursor: pointer;
@@ -617,11 +577,11 @@ footer {
     font-size: 4rem;
 }
  
-.characters-preview .preview .fa-times:hover{
+.characters-preview .preview .fa-times:hover {
     transform: rotate(90deg);
 }
  
-.characters-preview .preview h3{
+.characters-preview .preview h3 {
     color:#444;
     padding:.5rem 0;
     font-size: 2.5rem;
@@ -629,20 +589,20 @@ footer {
  
  
  
-.characters-preview .preview p{
+.characters-preview .preview p {
     line-height: 1.5;
     padding:1rem 0;
     font-size: 1.6rem;
     color:#777;
 }
  
-.characters-preview .preview .description{
+.characters-preview .preview .description {
     padding:1rem 0;
     font-size: 2.5rem;
     color:#27ae60;
 }
 
-.characters-preview .preview .fa-times{
+.characters-preview .preview .fa-times {
     position: absolute;
     top:1rem; right:1.5rem;
     cursor: pointer;
@@ -650,15 +610,15 @@ footer {
     font-size: 4rem;
 }
 
-.characterss-preview .preview .fa-times:hover{
+.characterss-preview .preview .fa-times:hover {
     transform: rotate(90deg);
 }
 
-.character-preview{
+.character-preview {
     position: absolute;
 }
 
-/* STYLE DE LA FENETRE MODAL*/
+/* ===================STYLE DE LA FENETRE MODAL=========================*/
 
 .modal {
    margin:0; /* Centre le modal verticalement et horizontalement */
@@ -676,31 +636,24 @@ footer {
    overflow: auto; /* Enable scroll if needed */
    background-color: rgb(0,0,0); /* Fallback color */
    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
- 
+}
  
 /* Modal Content */
 .modal-content {
-   /* position: absolute;
-   justify-content: center; */
    display: flex;
-   /* flex-direction: column; */
    justify-content: center;
    background-color: #fefefe;
    margin-left: 25%; /* Centre le modal verticalement et horizontalement */
-   
    padding: 5% ;
    border: 1px solid #888;
    width: 50%;
 }
 
 .modal-content img {
-
    max-width: 100%;
    height: auto;
    padding: 11%;
    margin: 11%;
-   /* margin-right: 20%;
-   margin-bottom: 15%; */
 }
 
 .modal-content h3 {
